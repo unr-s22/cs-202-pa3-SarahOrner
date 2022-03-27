@@ -3,7 +3,7 @@
 
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
-
+//need money class from alicia :)
 class Account {
     vector<Money> deposits;
     vector<Money> withdrawals;
@@ -20,7 +20,8 @@ public:
     vector<Money> getWithdrawals(){
         return withdrawals;
     }
-    friend std::ostream &operator<< (std::ostream &out, const Dog &dog);
+    Money calculateBalance();
+    friend std::ostream &operator<< (std::ostream &out, const Account &account); //this prints it
 
 };
 #endif //ACCOUNT_H
