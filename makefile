@@ -7,7 +7,7 @@ main.o: main.cpp money.h account.h
 money.o: money.cpp money.h
 	g++ -c money.cpp
 
-account.o: account.cpp account.h
+account.o: account.cpp account.h money.h
 	g++ -c account.cpp
 
 clean:
