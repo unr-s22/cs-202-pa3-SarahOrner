@@ -20,10 +20,13 @@ int main(){
 
     Money m(300,10);
     Money n(100,10);
-    if(m > n){
-        cout<< m <<endl;
+
+    if(m>n){
+        cout<<"Account m has more money than Account n" <<endl;
+    }else if(n>m){
+        cout<<"Account n has more money than Account m"<<endl;
     }else{
-        cout<<"false"<<endl;
+        cout<<"Account m and Account n have the same amount of money"<<endl;
     }
 
     return 0;
