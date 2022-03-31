@@ -10,11 +10,7 @@ Money::Money(int d, int c){
   cents = c;
 }
 
-friend std::ostream &operator<<(std::ostream &os, const Money &m){
-  os << "$" << m.cents() * 0.01 << endl;
+std::ostream &operator<<(std::ostream &os, const Money &m){
+  os << "$" << m << endl;
   return os;
-}
-
-friend std::ostream &operator<<(std::ostream &os, const Money &m){
-  os<<
 }
