@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "account.h"
+#include "money.h"
 using namespace std;
 
 void Account::makeDeposit(Money deposit){
