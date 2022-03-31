@@ -17,6 +17,10 @@ int main(){
 
     cout<<myAccount<<endl;
 
+    m(300.10,00) //cents
+
+    //constructor for money object -- friend constructor and variable
+
     //Write code to verify that your relational operators are working correctly. This is up to you, however, you must have printouts to the console showing that the operations are correct.
 
     /*Money m(100,10);
