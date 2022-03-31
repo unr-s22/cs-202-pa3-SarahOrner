@@ -1,11 +1,20 @@
 #include <iostream>
 #include "money.h"
 
-bool operator<(const Money &rhs) const{
-  return all_cents < rhs.all_cents;
+using namespace std;
+
+Money::Money(){}
+
+Money::Money(int d, int c){
+  dollars = d;
+  cents = c;
 }
 
-friend std::ostream &operator<<(std::ostream &os, const Money &money){
-  os << "$" << money.all_cents * 0.01;
+friend std::ostream &operator<<(std::ostream &os, const Money &m){
+  os << "$" << m.cents() * 0.01 << endl;
   return os;
+}
+
+friend std::ostream &operator<<(std::ostream &os, const Money &m){
+  os<<
 }
