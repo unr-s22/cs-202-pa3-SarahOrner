@@ -6,9 +6,9 @@
 using namespace std;
 
 class Money{
-  friend bool operator==(const Money &lhs, const Money &rhs);
+   friend bool operator==(const Money&, const Money&);
 private:
-  int dollars, all_cents;
+  int dollars, cents;
 public:
   Money();
   Money(int dol, int cen);
